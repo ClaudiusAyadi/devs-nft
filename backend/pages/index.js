@@ -28,22 +28,22 @@ export default function Home() {
   // web3ModalRef: initiate Web3Modal reference
   const web3ModalRef = useRef();
 
-  // presaleMint: interacts and controls the presaleMint()
-  const presaleMint = async () => {
+  // mintPresale: interacts and controls the mintPresale() in the contract
+  const mintPresale = async () => {
     try {
       // set signer
       const signer = await getProviderOrSigner(true);
 
-      // create contract instance with signer and allow update method
+      // contract instance with signer and update method
       const whitelist = new Contract(DEVSNFT_CONTRACT_ADDRESS, abi, signer);
 
-      // startPresale: calls presaleMint() here to start minting for whitelisted addresses
-      const startPresale = await whitelist.presaleMint({
+      // callPresale: calls mintPresale() from the contract to initiate minting tx for whitelisted addresses
+      const callPresale = await whitelist.mintPresale({
         // parse NFT cost using utils
-        value: utils.parseEther("0.001"),
+        value: utils.parseEther("0.01"),
       });
       setConfirming(true);
-      await startPresale.wait();
+      await callPresale.wait();
       setConfirming(flase);
       window.alert("Hurray! You just minted a DEVSNFT. Welcome to the hood");
     } catch (error) {
@@ -51,23 +51,28 @@ export default function Home() {
     }
   };
 
-  // publicMint: interacts with the mint() to initiate NFT minting - public round
-  const publicMint = async () => {
+  // mintPublic: interacts and controls the mintPublic() in the contract
+  const mintPublic = async () => {
     try {
       // set signer
       const signer = await getProviderOrSigner(true);
-      
-      // contract instance with signer
-      const whitelist = new Contract(
-        DEVSNFT_CONTRACT_ADDRESS,
-        abi,
-        signer,
-      );
 
-      // startPublic: calls the mint() to initiate public round
+      // contract instance with signer and update method
+      const whitelist = new Contract(DEVSNFT_CONTRACT_ADDRESS, abi, signer);
 
+      // callPublic: calls the mintPublic() in the contract to initiate minting tx for the public round
+      const callPublic = await whitelist.mintPublic({
+        // parse NFT cost using utils
+        value: utils.parseEther("0.01"),
+      });
+      setConfirming(true);
+      await callPublic.wait();
+      setConfirming(flase);
+      window.alert("Hurray! You just minted a DEVSNFT. Welcome to the hood");
+    } catch (error) {
+      console.error(error);
     }
-  }
+  };
 
   return (
     <div className={styles.container}>
