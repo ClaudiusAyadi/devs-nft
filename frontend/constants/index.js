@@ -1,5 +1,5 @@
 export const DEVSNFT_CONTRACT_ADDRESSS =
-  "0xd20fB8Fb3E63B97AD3Ba2bAAb35C2ffF06fC53F8";
+  "0xfeBaE3ceb78f465aC5D36C0B92Dabc7130F09Ec8";
 
 export const abi = [
   {
