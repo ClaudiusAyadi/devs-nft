@@ -4,7 +4,7 @@ export default function handler(req, res) {
 
   // get image dir url
   const image_url =
-    "https://raw.githubusercontent.com/claudiusayadi/devs-nft/tree/main/frontend/public/devsnft";
+    "https://raw.githubusercontent.com/claudiusayadi/devs-nft/main/frontend/public/devsnft/";
 
   // set Opensea standard
   res.status(200).json({
