@@ -10,7 +10,7 @@ I built it with `Solidity`, `React`, and `Next.js`.
 
 > 1.  Users should get whitelisted using the NFT Whitelisting DApp I created previously. [See it here][https://whitelist-dapp.claudiusayadi.vercel.app/].
 >
-> 2.  Then, come back here and click on the live demo link at the bottom here 👇
+> 2.  Then, come back here and click on the live demo link at the bottom here 👇👇
 >
 > 3.  Connect your wallet, it is automatic if you are on Rinkeby network. Just approve and get connected.
 >
