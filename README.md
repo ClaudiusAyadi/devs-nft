@@ -8,7 +8,7 @@ I built it with `Solidity`, `React`, and `Next.js`.
 
 **HOW IT WORKS**
 
-1. Users should get whitelisted using the NFT Whitelisting DApp I created previously. [See it here][https://whitelist-dapp.claudiusayadi.vercel.app/].
+```1. Users should get whitelisted using the NFT Whitelisting DApp I created previously. [See it here][https://whitelist-dapp.claudiusayadi.vercel.app/].
 
 2. Then, come back here and click on the live demo link at the bottom here 👇
 
@@ -18,7 +18,7 @@ I built it with `Solidity`, `React`, and `Next.js`.
 
 5. If you did not get into the whitelist, wait for Public Round to mint.
 
-6. Two other possibilities are: the minting interval has ended for both presale and public rounds, or we have exceeded the maximum limit of NFTs to be minted.
+6. Two other possibilities are: the minting interval has ended for both presale and public rounds, or we have exceeded the maximum limit of NFTs to be minted.```
 
 You can see the implementation of the above logic in the smart contract, and the possible interactions and queries from the frontend directory.
 
