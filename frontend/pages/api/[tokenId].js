@@ -1,7 +1,7 @@
 export default function handler(req, res) {
   // get the tokenId from the queried parameter
   const tokenId = req.query.tokenId;
-
+  
   // get image dir url
   const image_url =
     "https://raw.githubusercontent.com/claudiusayadi/devs-nft/main/frontend/public/devsnft/";
