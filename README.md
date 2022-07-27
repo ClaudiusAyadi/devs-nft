@@ -2,9 +2,9 @@
 
 _Hi! You are welcome again!_
 
-This is my 3rd DApp following the [learnweb3DAO tracks][https://learnweb3.io]. It is the final part of our NFT collection DApp.
+This is my 3rd DApp following the [learnweb3DAO tracks](https://learnweb3.io). It is the final part of our NFT collection DApp.
 
-I built it with Solidity, React, and Next.js.
+I built it with `Solidity`, `React`, and `Next.js`.
 
 **HOW IT WORKS**
 
