@@ -52,7 +52,7 @@ contract DevsNFT is ERC721Enumerable, Ownable {
   function mintPresale() public payable whenActive {
     require(
       startTime && block.timestamp < endTime,
-      "Presale not yet active, check back later"
+      "Presale not yet started, check back later"
     );
     require(
       whitelist.whitelistedAddresses(msg.sender),

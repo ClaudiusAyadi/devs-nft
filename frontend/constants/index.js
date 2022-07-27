@@ -1,6 +1,6 @@
 export const DEVSNFT_CONTRACT_ADDRESSS =
-  "0x108606cFc87dD34D7a4D9D9177486c2953fEbcC6";
-  
+  "0xd20fB8Fb3E63B97AD3Ba2bAAb35C2ffF06fC53F8";
+
 export const abi = [
   {
     inputs: [
@@ -224,7 +224,14 @@ export const abi = [
   },
   {
     inputs: [],
-    name: "mint",
+    name: "mintPresale",
+    outputs: [],
+    stateMutability: "payable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "mintPublic",
     outputs: [],
     stateMutability: "payable",
     type: "function",
@@ -285,13 +292,6 @@ export const abi = [
       },
     ],
     stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "presaleMint",
-    outputs: [],
-    stateMutability: "payable",
     type: "function",
   },
   {
