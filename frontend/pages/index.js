@@ -308,7 +308,7 @@ export default function Home() {
   }
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>DevsNFT Minting</title>
         <meta
@@ -317,44 +317,34 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://github.com/claudiusayadi">DevsNFT!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Hi! You are welcome again!
-          <br />
-          <br />
-          This is my 3rd DApp following the [learnweb3DAO
-          tracks][https://learnweb3.io]. It is the final part of our NFT
-          collection DApp.
-          <code className={styles.code}>This DApp was built with:</code>
-        </p>
-
-        <div className={styles.grid}>
-          <h2 className={styles.card}>Solidity</h2>
-
-          <h2 className={styles.card}>React</h2>
-
-          <h2 className={styles.card}>Next.js</h2>
+      <div className={styles.main}>
+        <div>
+          <h1 className={styles.title}>Welcome to DevsNFT!</h1>
+          <div className={styles.description}>
+            Hi! You are welcome again!
+            <br />
+            <br />
+            This is my 3rd DApp following the [learnweb3DAO
+            tracks][https://learnweb3.io]. It is the final part of our NFT
+            collection DApp.
+            <br />
+            <br />
+            This DApp was built with:
+            <h2>Solidity</h2>
+            <h2>React</h2>
+            <h2>Next.js</h2>
+          </div>
+          <div className={styles.description}>
+            Minted: {tokenIds}/20 DevsNFT
+          </div>
+          {renderButton()};
         </div>
-      </main>
+        <div>
+          <img className={styles.image} src="./devsnft/0.svg" />
+        </div>
+      </div>
 
-      <footer className={styles.footer}>
-        <a href="https://github.com/claudiusayadi">
-          Built with 💖{" "}
-          <span className={styles.logo}>
-            <Image
-              src="/devsnft.svg"
-              alt="Claudius Ayadi"
-              width={72}
-              height={16}
-            />
-          </span>
-        </a>
-      </footer>
+      <footer className={styles.footer}>Built with 💖 by wetNode</footer>
     </div>
   );
 }
